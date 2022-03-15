@@ -1,12 +1,12 @@
 import React from "react";
-import { UserContext } from "./components/providers/UserProvider";
+import { RecoilRoot } from "recoil";
 import { Router } from "./components/routers/Router";
 import "./styles.css";
 
 export default function App() {
   return (
-    <UserContext>
+    <RecoilRoot>
       <Router />
-    </UserContext>
+    </RecoilRoot>
   );
 }
